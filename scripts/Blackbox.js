@@ -65,7 +65,7 @@ var Blackbox = function(options)
         this.ignorePaths['/'].home = 1;
 
     // Media file detection regex (pre-compiled since MuJS regexps are slow).
-    this.mediaRgx = /\.(?:mp[234]|m4[av]|mpe?g|m[12]v|web[mp]|mk(?:[av]|3d)|h?264|qt|mov|avi|xvid|divx|wm[av]|asf|pcm|flac|aiff|wav|aac|dts|e?ac3|dat|bin|vob|vcd|mt[sv]|m2ts?|ts|flv|f4[vp]|rm(?:vb)?|3(?:gp|iv)|h?dv|og[gmv]|jpe?g|png|bmp|gif)(?:\.part)?$/i;
+    this.mediaRgx = /\.(?:mp[234]|m4[av]|mpe?g|m[12]v|m3u8?|web[mp]|mk(?:[av]|3d)|h?264|qt|mov|avi|xvid|divx|wm[av]|asf|pcm|flac|aiff|wav|aac|dts|e?ac3|dat|bin|vob|vcd|mt[sv]|m2ts?|ts|flv|f4[vp]|rm(?:vb)?|3(?:gp|iv)|h?dv|og[gmv]|jpe?g|png|bmp|gif)(?:\.part)?$/i;
 
     // Include the user's custom inclusion regex (if available and non-empty).
     var includeRgx = options.includeRegex ? Utils.trim(options.includeRegex) : null;
